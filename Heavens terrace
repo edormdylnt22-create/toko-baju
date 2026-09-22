@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Baju Saya</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #111;
+            background: white;
+        }
+
+        header {
+            height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 30px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .menu {
+            font-size: 28px;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .cart {
+            font-size: 24px;
+        }
+
+        .banner {
+            height: 250px;
+            background: #111;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 40px 30px;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 35px 25px;
+        }
+
+        .product {
+            position: relative;
+        }
+
+        .product-image {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            background: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+        }
+
+        .product-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .price {
+            font-size: 19px;
+            margin-top: 10px;
+        }
+
+        .sold {
+            position: absolute;
+            right: 0;
+            top: 0;
+            background: #111;
+            color: white;
+            padding: 9px 13px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px 15px;
+            }
+
+            .products {
+                gap: 25px 12px;
+            }
+
+            .product-name {
+                font-size: 16px;
+            }
+
+            .price {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="menu">☰</div>
+    <div class="logo">TOKO SAYA</div>
+    <div class="cart">🛒</div>
+</header>
+
+<div class="banner">
+    TOKO BAJU
+</div>
+
+<div class="container">
+
+    <h2>RILIS TERBARU</h2>
+
+    <div class="products">
+
+        <div class="product">
+            <div class="product-image">👕</div>
+            <div class="product-name">Basic Black Tee</div>
+            <div class="price">IDR 215.000</div>
+        </div>
+
+        <div class="product">
+            <div class="product-image">👕</div>
+            <div class="sold">HABIS</div>
+            <div class="product-name">White Graphic Tee</div>
+            <div class="price">IDR 225.000</div>
+        </div>
+
+        <div class="product">
+            <div class="product-image">🩳</div>
+            <div class="product-name">Utility Shorts</div>
+            <div class="price">IDR 195.000</div>
+        </div>
+
+        <div class="product">
+            <div class="product-image">👜</div>
+            <div class="product-name">Convertible Bag</div>
+            <div class="price">IDR 235.000</div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
